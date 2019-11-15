@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookAct"
+    android:background="#ffffff">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appicon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="LMS"
+        android:textColor="#B5B5B5"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Enter Book Details..!"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/Ab_titileed"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/Ab_authored"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Book Author"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Ab_titileed"
+        app:layout_constraintStart_toStartOf="@+id/Ab_titileed"
+        app:layout_constraintTop_toBottomOf="@+id/Ab_titileed" />
+
+    <EditText
+        android:id="@+id/Ab_yeared"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Publish Year"
+        android:inputType="phone"
+        android:shadowRadius="0"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Ab_authored"
+        app:layout_constraintStart_toStartOf="@+id/Ab_authored"
+        app:layout_constraintTop_toBottomOf="@+id/Ab_authored" />
+
+    <Button
+
+        android:id="@+id/Ab_submitBt"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:background="@drawable/buttoncorner"
+        android:text="Register Book"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@id/Ab_backBt"
+        app:layout_constraintEnd_toEndOf="@+id/Ab_yeared"
+        app:layout_constraintStart_toStartOf="@+id/Ab_yeared"
+        app:layout_constraintTop_toBottomOf="@+id/Ab_yeared" />
+
+    <Button
+        android:id="@+id/Ab_backBt"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="32dp"
+        android:background="#ffffff"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Ab_submitBt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Ab_submitBt"
+        app:layout_constraintTop_toBottomOf="@+id/Ab_submitBt" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showBookDetAct"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appicon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="LMS"
+        android:textAlignment="center"
+        android:textColor="#B5B5B5"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="112dp"
+        android:text="Edit Book Details..!"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/Sb_titileed"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/Sb_authored"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Book Author"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Sb_titileed"
+        app:layout_constraintStart_toStartOf="@+id/Sb_titileed"
+        app:layout_constraintTop_toBottomOf="@+id/Sb_titileed" />
+
+    <EditText
+        android:id="@+id/Sb_yeared"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Publish Year"
+        android:inputType="phone"
+        android:shadowRadius="0"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Sb_authored"
+        app:layout_constraintStart_toStartOf="@+id/Sb_authored"
+        app:layout_constraintTop_toBottomOf="@+id/Sb_authored" />
+
+    <Button
+
+        android:id="@+id/Sb_editBt"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttoncorner"
+        android:text="Edit Done"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/Sb_cated"
+        app:layout_constraintStart_toStartOf="@+id/Sb_yeared"
+        app:layout_constraintTop_toBottomOf="@+id/Sb_cated" />
+
+    <Button
+        android:id="@+id/Sb_backBt"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffff"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sb_editBt" />
+
+    <EditText
+        android:id="@+id/Sb_cated"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sb_yeared" />
+
+
+</android.support.constraint.ConstraintLayout>

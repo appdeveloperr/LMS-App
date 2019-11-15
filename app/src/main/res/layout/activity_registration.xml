@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationAct"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appicon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="LMS"
+        android:textColor="#B5B5B5"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Safe and Secure tracking for all!"
+        app:layout_constraintBottom_toTopOf="@+id/inputUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputUserName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/inputUserName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/inputPassword"/>
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputPhno"
+        app:layout_constraintEnd_toEndOf="@+id/inputUserName"
+        app:layout_constraintStart_toStartOf="@+id/inputUserName"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserName" />
+
+    <EditText
+        android:id="@+id/inputPhno"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:shadowRadius="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxTerm"
+        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerm"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="I accept the Terms of service and Privacy policy."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputPhno"
+        app:layout_constraintStart_toStartOf="@+id/inputPhno"
+        app:layout_constraintTop_toBottomOf="@+id/inputPhno"
+        app:layout_constraintBottom_toTopOf="@+id/RegBt"/>
+
+    <Button
+
+        android:id="@+id/RegBt"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttoncorner"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxTerm"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxTerm"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTerm"
+        app:layout_constraintBottom_toTopOf="@id/cancelReg"/>
+
+    <Button
+        android:id="@+id/cancelReg"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="32dp"
+        android:background="#ffffff"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RegBt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RegBt"
+        app:layout_constraintTop_toBottomOf="@+id/RegBt" />
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
